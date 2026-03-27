@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 - DOM: Conceitos Básicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        #lista-container {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Atividade de DOM</h1>
+
+    <!-- Contador de Cliques -->
+    <section>
+        <h2>1. Contador de Cliques</h2>
+        <button id="btn-incrementar">Incrementar</button>
+        <button id="btn-decrementar">Decrementar</button>
+        <span id="valor-contador">0</span>
+    </section>
+
+    <!-- Texto Dinâmico e Contador de Caracteres -->
+    <section>
+        <h2>2. Texto Dinâmico e Caracteres</h2>
+        <p>Digite algo e aperte Enter:</p>
+        <input type="text" id="campo-texto" placeholder="Digite seu texto aqui...">
+        <p>Caracteres (sem espaços): <span id="contagem-caracteres">0</span></p>
+        <div id="container-paragrafos"></div>
+    </section>
+
+    <!-- Adicionar Novo Item -->
+    <section>
+        <h2>3. Adicionar Listas</h2>
+        <label for="tipo-lista">Escolha o tipo:</label>
+        <select id="tipo-lista">
+            <option value="ul">Lista Não Ordenada (ul)</option>
+            <option value="ol">Lista Ordenada (ol)</option>
+        </select>
+        <button id="btn-adicionar-lista">Criar Lista</button>
+        <div id="lista-container"></div>
+    </section>
+
+    <!-- Botão de Reset -->
+    <section>
+        <h2>4. Resetar Tudo</h2>
+        <button id="btn-reset" style="background-color: #ff4444; color: white; border: none;">Resetar Interações</button>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
